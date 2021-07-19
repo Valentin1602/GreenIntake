@@ -1,83 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <title>Green Intake</title>
-  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-  <script type="text/javascript" src="https://sdk.clarifai.com/js/clarifai-latest.js"></script>
-  <script type="text/javascript" src="wolfram.js"></script>
-  <script type="text/javascript" src="predict.js"></script>
-  
-   <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>GreenIntake - </title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i"
+        rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z5XRCTSHP3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-Z5XRCTSHP3');
+    </script>
 </head>
-<body>
-<!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+        <div class="container px-5">
+            <a class="navbar-brand" href="#page-top">GreenIntake</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span
+                    class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="calories.html">Calorie Finder</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Header-->
+    <header class="masthead text-center text-white">
+        <div class="masthead-content">
             <div class="container px-5">
-                <a class="navbar-brand" href="#page-top">Green Intake</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="home.html">Home page</a></li>
-                        
-                    </ul>
+                <h1 class="masthead-heading mb-0">GreenIntake</h1>
+                <h2 class="masthead-subheading mb-0">Will Rock Your Socks Off</h2>
+                <a class="btn btn-primary btn-xl rounded-pill mt-5" href="#scroll">Learn More</a>
+            </div>
+        </div>
+        <div class="bg-circle-1 bg-circle"></div>
+        <div class="bg-circle-2 bg-circle"></div>
+        <div class="bg-circle-3 bg-circle"></div>
+        <div class="bg-circle-4 bg-circle"></div>
+    </header>
+    <!-- Content section 1-->
+    <section id="scroll">
+        <div class="container px-5">
+            <div class="row gx-5 align-items-center">
+                <div class="col-lg-6 order-lg-2">
+                    <div class="p-5"><img class="img-fluid rounded-circle" src="assets/img/fruits and vegetables.jpg"
+                            alt="..." /></div>
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <div class="p-5">
+                        <h2 class="display-4">What is Green Intake?</h2>
+                        <p>Green Intake - Fast, simple & healthy. Green Intake tracks the number of calories, fats and
+                            proteins. No login, all functions for FREE and extremly fast.</p>
+                    </div>
                 </div>
             </div>
-        </nav>
-        <!-- Header-->
-        <header class="masthead text-center text-white">
-            <div class="masthead-content">
-                <div class="container px-5">
-                    <h1 class="masthead-heading mb-0">Welcome</h1>
-                    <h2 class="masthead-subheading mb-0">To the calorie finder</h2>
-                    <a class="btn btn-primary btn-xl rounded-pill mt-5" href="#scroll">How many calories?</a>
+        </div>
+    </section>
+    <!-- Content section 2-->
+    <section>
+        <div class="container px-5">
+            <div class="row gx-5 align-items-center">
+                <div class="col-lg-6">
+                    <div class="p-5"><img class="img-fluid rounded-circle"
+                            src="assets/img/Logo_Be_Healthy_quadrada_migtext.jpg" alt="..." /></div>
+                </div>
+                <div class="col-lg-6 order-lg-2col-lg-6 order-lg-2">
+                    <div class="p-5">
+                        <h2 class="display-4">How it works...</h2>
+                        <p>Upload a picture of your food and get a full description of all the food proteins, calories,
+                            and fats in a few seconds.</p>
+                    </div>
                 </div>
             </div>
-           
-        </header>
-		<div class="wrapper">
-        <!-- Content section 1-->
-        <section id="scroll">
-            <div class="container px-5">
-
-    <form action="#">
-      <input type="file" id="filename" placeholder="Filename" size="100"/>
-      <button onclick="predict_click($('#filename').val(), 'file'); return false;">Get my Nutritional Breakdown!</button>
-    </form>
-
-
-    <div id="predictions">
-      <div class="food-photo">
-        <div class="step"><span>1</span> Upload a Photo</div>
-      </div>
-      <div class="nutrition">
-        <div class="step"><span>2</span> Get a Nutritional Breakdown</div>
-        <div id="concepts"></div>
-      </div>
-    </div>
-                    
-                           
+        </div>
+    </section>
+    <!-- Content section 3-->
+    <section>
+        <div class="container px-5">
+            <div class="row gx-5 align-items-center">
+                <div class="col-lg-6 order-lg-2">
+                    <div class="p-5"><img class="img-fluid rounded-circle"
+                            src="assets/img/Healthy-Eating-Topic-of-the-month-1080x670.jpg" alt="..." /></div>
                 </div>
-           
-        </section>
-			</div> 
- 
-    
-
-  
-  <!-- Footer-->
-        <footer class="py-5 bg-black">
-            <div class="container px-5"><p class="cr1">Copyright &copy; Green Intake</p></div>
-        </footer>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
+                <div class="col-lg-6 order-lg-1">
+                    <div class="p-5">
+                        <h2 class="display-4">Why use our WebApp!</h2>
+                        <p>We live in a age of speed in which most peple don't have the time to put a lot of time in
+                            selecting what they are eating. This web application is a very effective way of keeping
+                            track of the number of calories you are eating every time. The app is free and very fast.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer-->
+    <footer class="py-5 bg-black">
+        <div class="container px-5">
+            <p class="cr1">Copyright &copy; Green Intake</p>
+        </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
